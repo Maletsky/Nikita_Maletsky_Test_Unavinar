@@ -65,12 +65,12 @@ public class PlayerController : MonoBehaviour
 
         rotationF = direction.x / 4;
 
-        if (rotationF >= 20 && !rotated)
+        if (rotationF >= 50 && !rotated)
         {
             rotated = true;
             rotationAngle += 90;
         }
-        if (rotationF <= -20 && !rotated)
+        if (rotationF <= -50 && !rotated)
         {
             rotated = true;
             rotationAngle -= 90;
