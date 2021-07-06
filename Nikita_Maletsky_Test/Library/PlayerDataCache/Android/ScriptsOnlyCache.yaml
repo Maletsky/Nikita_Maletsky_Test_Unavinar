@@ -14,11 +14,13 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
     - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/GameplayScene.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -45,10 +47,16 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1516}
     - Class: 114
       Script: {instanceID: 1974}
     - Class: 114
@@ -61,6 +69,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2494}
     - Class: 114
       Script: {instanceID: 2666}
+    - Class: 114
+      Script: {instanceID: 2760}
     - Class: 114
       Script: {instanceID: 3452}
     - Class: 114
@@ -76,6 +86,8 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -256,7 +268,7 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: f717d734255d7ea79051c5de9ae2ecc7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PoseReset
@@ -520,13 +532,13 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
-      Hash: fa28ac1ce0744dd5e806106eaa28018d
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FallingCube
   - hash:
       serializedVersion: 2
-      Hash: cf2a2b58fc1c3b4cb392d6532eed53a8
+      Hash: 14fac934511bcd72ebfa72a1b0309258
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -580,5 +592,5 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   platform: 13
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
-  playerPath: E:/UnityProjects/Unavinar_Test/Nikita_Maletsky_Test_Unavinar/Test_APK.apk
+  - Assets/Scenes/GameplayScene.unity
+  playerPath: E:/UnityProjects/Unavinar_Test/Nikita_Maletsky_Test_Unavinar/Nikita_Maletsky_Test_build.apk

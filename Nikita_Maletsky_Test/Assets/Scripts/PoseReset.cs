@@ -5,7 +5,8 @@ using UnityEngine;
 public class PoseReset : MonoBehaviour
 {
     private PlayerController playerController;
- 
+    [SerializeField]
+    private int poseTarget;
     private void Start()
     {
         playerController = GameObject.Find("Player").GetComponent<PlayerController>();
@@ -15,7 +16,7 @@ public class PoseReset : MonoBehaviour
         if (other.tag == "Player")
         {
             
-            playerController.rightPose = 0;
+            playerController.rightPose = poseTarget;
         }
     }
     private void OnTriggerStay(Collider other)
@@ -23,7 +24,7 @@ public class PoseReset : MonoBehaviour
         if (other.tag == "Player")
         {
 
-            playerController.rightPose = 0;
+            playerController.rightPose = poseTarget;
         }
     }
 }
